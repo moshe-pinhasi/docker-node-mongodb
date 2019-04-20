@@ -1,11 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "production ready server",
+  "description": "todo server including connecting to mongodb",
   "main": "server.js",
   "scripts": {
-    "server:dev": "nodemon server.js",
-    "server:prod": "node server.js"
+    "server:dev": "nodemon ./src/server.js",
+    "server:prod": "node ./src/server.js"
   },
   "author": "moshe pinhasi",
   "license": "ISC",

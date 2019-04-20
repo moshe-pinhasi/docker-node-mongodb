@@ -15,6 +15,7 @@ dbService
     .catch(e => {
         console.log('##########################################')
         console.log('error connecting: ', e)
+        console.log('##########################################')
     })
 
 // routes
