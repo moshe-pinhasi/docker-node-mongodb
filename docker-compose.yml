@@ -14,7 +14,7 @@ services:
       - mongo
     environment:
       NODE_ENV: "production"
-      DATABASE_URL: "mongodb://mongo:27017"
+      DATABASE_URL: "mongodb://mongo:27017/todos-docker"
   mongo:
     image: mongo
     ports:
