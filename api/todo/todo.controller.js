@@ -27,8 +27,13 @@ const addTodo = async (req, res, next) => {
     }
 }
 
+const getAdmin = (req, res) => {
+    res.send({message: "hello admin"})
+}
+
 module.exports = {
     getTodo,
     addTodo,
-    listTodos
+    listTodos,
+    getAdmin
 }

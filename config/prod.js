@@ -1,4 +1,4 @@
 module.exports = {
-  "dbURL": process.env.DB_URL,
-  "morganFormat": process.env.LOGGER_FORMAT,
+  "DB_URL": process.env.DATABASE_URL,
+  "MORGAN_FORMAT": process.env.LOGGER_FORMAT,
 }

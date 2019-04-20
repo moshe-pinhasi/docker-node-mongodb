@@ -1,6 +1,6 @@
 module.exports = {
-  "dbURL": "localhost:3306",
-  "morganFormat": "tiny",
+  "DB_URL": "localhost:3306",
+  "MORGAN_FORMAT": "tiny",
   "jwt": {
     "secret": "som_secret_string",
      "options": { 

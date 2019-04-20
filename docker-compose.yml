@@ -1,7 +1,9 @@
 version: "2"
 services:
   app:
+    container_name: todo-node-mongo
     build: .
+    image: moshe/node-todo
     command: npm run server:prod
     volumes:
       - .:/usr/app
@@ -10,6 +12,8 @@ services:
       - "3000:3000"
     depends_on:
       - mongo
+    environment:
+      - DATABASE_URL="mongodb://mongo:27017"
   mongo:
     image: mongo
     ports:

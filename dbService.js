@@ -1,9 +1,11 @@
 "use strict";
 
 const MongoClient = require('mongodb').MongoClient;
- 
+ const config = require('./config')
+
 // Connection URL
-const url = 'mongodb://mongo:27017';
+console.log('config.DB_URL: ' + config.DB_URL)
+const url = config.DB_URL;
 
 var dbClient, db = null
 
