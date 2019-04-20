@@ -13,7 +13,8 @@ services:
     depends_on:
       - mongo
     environment:
-      - DATABASE_URL="mongodb://mongo:27017"
+      NODE_ENV: "production"
+      DATABASE_URL: "mongodb://mongo:27017"
   mongo:
     image: mongo
     ports:

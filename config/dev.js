@@ -1,5 +1,5 @@
 module.exports = {
-  "DB_URL": "localhost:3306",
+  "DB_URL": "mongodb://localhost:27017",
   "MORGAN_FORMAT": "tiny",
   "jwt": {
     "secret": "som_secret_string",
