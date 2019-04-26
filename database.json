@@ -1,0 +1,14 @@
+{
+    "dev": {
+      "driver": "mongodb",
+      "user": "root",
+      "database": "todos-docker"
+    },
+  
+    "prod": {
+      "driver": "mongodb",
+      "user": "root",
+      "database": "todos-docker"
+    }
+  
+  }

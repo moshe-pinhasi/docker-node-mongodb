@@ -5,9 +5,11 @@
   "main": "server.js",
   "scripts": {
     "server:dev": "nodemon ./src/server.js",
-    "server:prod": "npm run migrate-prod && node ./src/server.js",
-    "migrate-dev": "DATABASE_URL=mongodb://localhost:27017/todos-docker node ./node_modules/db-migrate/bin/db-migrate up all",
-    "migrate-prod": "node ./node_modules/db-migrate/bin/db-migrate up all"
+    "server:prod": "node ./src/server.js",
+    "migrate-dev": "node ./node_modules/db-migrate/bin/db-migrate up all",
+    "migrate-all": "node ./node_modules/db-migrate/bin/db-migrate up all",
+    "create-migrate": "node ./node_modules/db-migrate/bin/db-migrate create $NAME",
+    "migrate": "node ./node_modules/db-migrate/bin/db-migrate up $NAME"
   },
   "author": "moshe pinhasi",
   "license": "ISC",
