@@ -90,3 +90,8 @@ npm run migrate-all
 
 [using docker-compose for nodejs development]
 (https://blog.codeship.com/using-docker-compose-for-nodejs-development/)
+
+
+
+Need to add this lib for testing
+mongodb-memory-server
